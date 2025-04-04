@@ -1,0 +1,162 @@
+
+  .projectContainer .projectCard {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .projectContainer .projectCard:before {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #e6e5e1;
+  }
+  .projectContainer .projectCard:after {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    bottom: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #e6e5e1;
+  }
+  .projectContainer .projectCard ul {
+    z-index: 99;
+    position: absolute;
+    left: 39px;
+    top: 5px;
+    list-style-type: none;
+  }
+  .projectContainer .projectCard ul li {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 6px 0;
+    background-color: #e6e5e1;
+  }
+  .projectContainer .projectCard h2 {
+    z-index: 99;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .projectContainer .projectCard .fa-arrow-right {
+    z-index: 100;
+    position: absolute;
+    right: 75px;
+    bottom: 25px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .projectContainer .projectCard p {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    color: #333;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .projectContainer .projectCard .pic {
+    z-index: 100;
+    width: 400px;
+    height: 200px;
+    background-image: url("https://forum-cfx-re.akamaized.net/original/4X/9/e/0/9e0ae8653436dbbdecdb0d3cce71966efc423560.png");
+    background-size:cover;
+    filter: grayscale(100%);
+  }
+  .projectContainer .projectCard .social {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 180px;
+    height: 64px;
+    border-radius: 80px;
+  }
+  .projectContainer .projectCard .social i:nth-of-type(1) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .projectContainer .projectCard .social i:nth-of-type(2) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .projectContainer .projectCard .social i:nth-of-type(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .projectContainer .projectCard .social i:nth-of-type(4) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .projectContainer .projectCard:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .projectContainer .projectCard button {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: #da4d1d;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    mix-blend-mode: hard-light;
+  }
+  .projectContainer .projectCard button i {
+    font-size: 3rem;
+  }
+  .projectContainer .projectCard:hover button {
+    transform: scale(16.5);
+  }
+  .projectContainer .projectCard:hover p {
+    color: #fff;
+  }
+  .projectContainer .projectCard:hover .pic {
+    filter: grayscale(0);
+  }
+  .projectContainer .projectCard2 .pic {
+    background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+  }
+  .projectContainer .projectCard2 button {
+    background-color: #2b26c3;
+  }
+  
+  .dr {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 100px;
+  }

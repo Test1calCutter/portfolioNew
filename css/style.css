@@ -1,0 +1,240 @@
+:root {
+    --default: #1e1e1e;
+    --defaultHover: #383838;
+
+    --secondary: #2c2c2c;
+    --secondaryHover: #1e1e1e;
+
+    --tertiary: #444444;
+    --tertiaryHover: #383838;
+
+    --defaultColor: #ffffff;
+}
+
+
+body {
+    background-color: var(--secondary);
+    color: var(--defaultColor);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;   
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container .content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container .content .header {
+    height: 148.5px;
+    margin-top: -100%;
+    width: 100%;
+    background-color: var(--default);
+    background-image: url('../img/lowerBanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 0px 0px 1px var(--tertiary), inset 0px 0px 10px 1px var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .content .header .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.container .content .header .left img {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 1px var(--tertiary), inset 0px 0px 10px 1px var(--secondary);
+}
+.container .content .header .right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    position: static;
+}
+.container .content .header .right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.container .content .header .right ul .btn-left {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.container .content .header .right ul .btn-right {
+    height: 100%;
+    width: 303px;
+    display:flex;
+}
+.container .content .header .right ul .btn-right li {
+    margin-right: 30px;
+}
+.container .content .header .right ul .btn-right a {
+    color: var(--textColor, black);
+}
+.container .content .header .right ul li {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+.container .content .header .right ul li a {
+    text-decoration: none;
+    color: var(--defaultColor);
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.container .content .header .right ul li a:hover {
+    background-color: var(--defaultColor);
+    color: var(--defaultHover);
+    cursor: pointer;
+}
+
+
+
+
+.container .content .welcome {
+    width: 100%;
+    height: 786px;
+    z-index: 5;
+    position: relative;
+    box-shadow: 0px 0px 0px 1px var(--tertiary), inset 0px 0px 10px 1px var(--secondary);
+    border-radius: 15px 15px 0px 0px;
+    top: -37px;
+    background-color: var(--default);
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content .welcome .text {
+    text-align: center;
+}
+.container .content .welcome .text h1 {
+    margin-bottom: 10px;
+    font-size: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .content .welcome .text p {
+    line-height: 0px;
+    margin-top: 0px;
+    font-size: 2.3rem;
+    color: rgb(125, 125, 125);
+}
+span {
+    background:url(../img/text.png) 10% 50%;
+    background-size:cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text
+}
+
+.container .content .welcome .text .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    justify-content: center;
+}
+.container .content .welcome .text .buttons button {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border-color: var(--borderColor, transparent);
+    border-width: var(--borderWeight, 1px);
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 10px;
+    color: var(--textColor, black);
+    background-color: var(--fillColor, transparent);
+}
+.container .content .welcome .text .buttons button:hover {
+    background-color: var(--defaultHover);
+    color: var(--defaultColor);
+}
+
+
+.filled {
+    background-color: var(--fillColor, transparent);
+    color: var(--textColor, black);
+    border-radius: 5px;
+}
+.border {
+    border-width: var(--borderWeight, 1px);
+    border-style: solid;
+    border-color: var(--borderColor, transparent);
+}
+.hidden {
+    display: none;
+}
+
+
+
+@media (orientation:portrait){
+    .container .content .welcome {
+        width: 100%;
+        height: 786px;
+        z-index: 5;
+        position: relative;
+        box-shadow: 0px 0px 0px 1px var(--tertiary), inset 0px 0px 10px 1px var(--secondary);
+        border-radius: 15px 15px 0px 0px;
+        top: -37px;
+        background-color: var(--default);
+        background-image: url('../img/banner.png');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+    .container .content .welcome .text h1 {
+        margin-bottom: 10px;
+        font-size: 2.6rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #github {
+        display: none;
+    }
+}
